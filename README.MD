@@ -10,8 +10,8 @@
 - [x] Populete DB
 - [x] set enviromental uri
 - [x] not found middleware
-- [ ] error handler middleware
-- [ ] express-async-errors for async cotnrollers fn and error handling
+- [x] error handler middleware
+- [x] express-async-errors for async cotnrollers fn and error handling
 - [ ] Filter: by company
 - [ ] Filter: by name
 - [ ] Sort

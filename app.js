@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const products = require('./routes/products');
 const notFound = require('./middleware/not-found');
+const errorHandler = require('./middleware/error-handler');
 const connectDB = require('./db/connect');
 require('dotenv').config();
 
@@ -17,6 +18,7 @@ app.get('/', (req, res) => {
 });
 
 app.use(notFound);
+app.use(errorHandler);
 
 const port = 3000;
 
