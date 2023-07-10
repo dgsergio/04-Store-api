@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const products = require('./routes/products');
 const notFound = require('./middleware/not-found');
-const mongoose = require('mongoose');
+const connectDB = require('./db/connect');
 require('dotenv').config();
 
 app.use(express.json());
@@ -22,12 +22,12 @@ const port = 3000;
 
 const start = async () => {
   try {
-    await mongoose.connect(process.env.MONGO_URI);
+    await connectDB(process.env.MONGO_URI);
     app.listen(port, () => {
       console.log(`Server is listening on port ${port}`);
     });
   } catch (err) {
-    console.log(err);
+    console.log('el error: ' + err);
   }
 };
 
