@@ -11,9 +11,8 @@ app.use('/api/v1/products', products);
 
 app.get('/', (req, res) => {
   res.send(`
-    <h1>Welcome to home page</h1>
-    </br> 
-    <a href="api/v1/products">Go to the API Store</a>
+    <h1>Store API</h1>
+    <a href="api/v1/products">products route</a>
     `);
 });
 

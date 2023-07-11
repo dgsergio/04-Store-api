@@ -12,9 +12,10 @@
 - [x] not found middleware
 - [x] error handler middleware
 - [x] express-async-errors for async cotnrollers fn and error handling
-- [ ] Filter: by company
-- [ ] Filter: by name
-- [ ] Sort
-- [ ] Select
-- [ ] Skip & limit (Make a page oprtion)
-- [ ] Numeric filters
+- [x] Queries filter
+  - [x] by company and name
+  - [x] by featured
+  - [x] price and rating number >, >=, =, < and <=
+  - [x] Sort
+  - [x] Select
+  - [x] Skip & limit (Make a page option) default limit 10
